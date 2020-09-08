@@ -1,0 +1,137 @@
+.page-parallax-wapper {
+    width: 100%;
+}
+
+.page-parallax-wapper .page-parallax-section {
+    width: 100%;
+}
+
+.page-parallax-wapper .page-parallax-section--one .page-parallax__images {
+    background-image: url('../images/parallax/image1.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-parallax-wapper .page-parallax-section--one .page-parallax__images p {
+    background-color: #111;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.page-parallax-wapper .page-parallax-section--one .page-parallax-section__content {
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.page-parallax-wapper .page-parallax-section--one .page-parallax-section__content h2 {
+    color: #666666;
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.page-parallax-wapper .page-parallax-section--one .page-parallax-section__content p {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* --- page-parallax-section--two --- */
+.page-parallax-wapper .page-parallax-section--two .page-parallax__images {
+    background-image: url('../images/parallax/image2.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+
+.page-parallax-wapper .page-parallax-section--two .page-parallax__images p {
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.page-parallax-wapper .page-parallax-section--two .page-parallax-section__content {
+    background-color: #282e34;
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.page-parallax-wapper .page-parallax-section--two .page-parallax-section__content h2 {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.page-parallax-wapper .page-parallax-section--two .page-parallax-section__content p {
+    width: 90%;
+    line-height: 1.5;
+}
+
+/* --- page-parallax-section--three --- */
+.page-parallax-wapper .page-parallax-section--three .page-parallax__images {
+    background-image: url('../images/parallax/image3.jpg');
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+
+.page-parallax-wapper .page-parallax-section--three .page-parallax__images p {
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.page-parallax-wapper .page-parallax-section--three .page-parallax-section__content {
+    background-color: #282e34;
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.page-parallax-wapper .page-parallax-section--three .page-parallax-section__content p {
+    width: 90%;
+    line-height: 1.5;
+}
+
+.page-parallax-wapper .page-parallax-section--three .page-parallax-section__content h2 {
+    margin-bottom: 20px;
+    width: 90%;
+}

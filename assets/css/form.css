@@ -1,0 +1,99 @@
+.page-form-wapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../images/form/survey-form-background.jpeg');
+  color: var(--color-white);
+  padding-top: 120px;
+}
+
+.page-form-wapper .page-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10000;
+}
+
+.page-form-wapper .page-form p {
+  margin: 5px 0 25px 0;
+}
+
+.page-form-wapper .page-form .page-form__form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #393987;
+  width: 50%;
+  border-radius: 5px;
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+.page-form-wapper .page-form .page-form__form-group form {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.page-form-wapper .page-form .page-form__form-group form input,
+select {
+  padding: 8px 0;
+}
+
+.page-form-wapper .page-form .page-form__form-group form input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 5px rgba(237, 220, 237, 0.4);
+}
+
+.page-form-wapper .page-form .page-form__form-group input,
+select,
+textarea {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.page-form-wapper .page-form .page-form__form-group form>label,
+form>input,
+form>select,
+textarea {
+  width: 100%;
+}
+
+.page-form-wapper .page-form .page-form__form-group textarea {
+  color: black;
+}
+
+.page-form-wapper .page-form .page-form__form-group form option {
+  text-transform: capitalize;
+}
+
+.page-form-wapper .page-form .page-form__form-group form input[type="submit"] {
+  background: var(--color-green);
+  /* border-radius: 5px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .page-form-wapper .page-form .page-form__form-group {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-form-wapper .page-form .page-form__form-group {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-form-wapper .page-form .page-form__form-group {
+    width: 100%;
+  }
+}
