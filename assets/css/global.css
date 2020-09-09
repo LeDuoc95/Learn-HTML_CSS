@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -11,8 +12,13 @@
 :root {
     --color-white: #f3f3f3;
     --color-darkblue: #1b1b32;
+    --color-dark-black: #333333;
     --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
     --color-green: #37af65;
+    --color-light-blue: #2690d4;
+    --color-orage: #ffc600;
+    --color-white: #ffffff;
+    --color-black: ##000000;
 }
 
 /* @media (min-width: 576px) { ... }
@@ -44,7 +50,7 @@ body {
     height: 120px;
     background: #5d5a67;
     opacity: 0.6;
-    color: white;
+    color: var(--color-white);
     position: fixed;
     top: 0;
     left: 0;
@@ -101,7 +107,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: var(--color-white);
     padding: 10px;
 }
 
