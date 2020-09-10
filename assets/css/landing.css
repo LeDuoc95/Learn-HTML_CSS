@@ -54,7 +54,7 @@
     justify-items: center;
     align-items: center;
     text-align: center;
-    grid-column-gap: 40px;
+    column-gap: 40px;
     justify-content: center;
     word-break: break-all;
 }
@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    grid-column-gap: 15px;
+    column-gap: 15px;
     justify-items: center;
 }
 
@@ -157,7 +157,7 @@
         width: 100%;
         grid-template-columns: 1fr minmax(auto, 25em) 1fr;
         grid-template-rows: auto auto auto;
-        grid-gap: 15px 0;
+        gap: 15px 0;
     }
 
     .page-landing-wapper .page-landing-define .page-landing-define-card--one {
