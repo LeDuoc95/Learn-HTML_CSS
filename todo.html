@@ -7,7 +7,7 @@
     <title>Music Store</title>
     <link rel="icon" href="./assets/images/icons8-form-100.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/global.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/music.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/todo.css" type="text/css" />
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                     </li>
 
                     <li>
-                        <a href="./music.html">Music</a>
+                        <a href="./todo.html">Music</a>
                     </li>
 
                     <li>
@@ -66,10 +66,36 @@
                 </div>
             </nav>
         </header>
-        <main class="page-form-wapper">
-            main!
+        <main class="page-todo-wapper">
+            <div class="project-todo">
+                <div class="project-todo__content">
+                    <h2>My to-do-list</h2>
+                    <p><i>Double-click an item to mark it complete</i></p>
+                    <div class="project-todo__content--add-list">
+                        <input type="text" value="">
+                        <button id="add-list" class="btn btn--primary">Add</button>
+                    </div>
+                    <ul id="list-todo" class="page-todo__content--list">
+                        <!-- <li>
+                            ahihi
+                            <img src="./assets/icon/icons8-checked.svg" alt="">
+                        </li> -->
+                    </ul>
+                    <div class="project-todo__content--controll">
+                        <button class="btn btn--primary">Clear Completed</button>
+                        <button class="btn btn--danger">Empty List</button>
+                        <button class="btn btn--info">Complate All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-calculator">calculator</div>
+            <div class="project-calculator2">calculator</div>
+            <div class="project-calculator3">calculator</div>
         </main>
     </div>
+
+    <!-- JS -->
+    <script src="./assets/js/todo.js"></script>
 </body>
 
 </html>

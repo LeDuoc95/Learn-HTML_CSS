@@ -14,12 +14,13 @@
     --color-darkblue: #1b1b32;
     --color-dark-black: #333333;
     --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-    --color-green: #37af65;
+    --color-green: #66cd66;
     --color-light-blue: #2690d4;
     --color-orage: #ffc600;
     --color-white: #ffffff;
     --color-black: ##000000;
     --color-grey: #767676;
+    --color-red-light: #d53035;
 }
 
 /* @media (min-width: 576px) { ... }
