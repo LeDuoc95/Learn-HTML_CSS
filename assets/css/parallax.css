@@ -21,7 +21,7 @@
     text-transform: uppercase;
     padding: 20px;
     font-size: 28px;
-    color: white;
+    color: var(--color-white);
     letter-spacing: 3px;
     word-spacing: 3px;
 }
@@ -59,26 +59,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--color-white);
     font-size: 26px;
     letter-spacing: 5px;
 }
 
 .page-parallax-wapper .page-parallax-section--two .page-parallax__images p {
-    color: white;
+    color: var(--color-white);
     letter-spacing: 3px;
     word-spacing: 3px;
 }
 
 .page-parallax-wapper .page-parallax-section--two .page-parallax-section__content {
     background-color: #282e34;
-    color: white;
+    color: var(--color-white);
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: var(--color-white);
     font-size: 15px;
     text-align: center;
 }
@@ -102,26 +102,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--color-white);
     font-size: 26px;
     letter-spacing: 5px;
 }
 
 .page-parallax-wapper .page-parallax-section--three .page-parallax__images p {
-    color: white;
+    color: var(--color-white);
     letter-spacing: 3px;
     word-spacing: 3px;
 }
 
 .page-parallax-wapper .page-parallax-section--three .page-parallax-section__content {
     background-color: #282e34;
-    color: white;
+    color: var(--color-white);
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: var(--color-white);
     font-size: 15px;
     text-align: center;
 }

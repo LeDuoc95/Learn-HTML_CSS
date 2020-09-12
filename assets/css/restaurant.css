@@ -1,0 +1,267 @@
+.page-restaurant-wapper {
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, #ff7f50, #fc5e68, #ea4484, #c73ca0, #9044b6);
+    /* background-image: url('../images/restaurant/br.PNG'); */
+    /* background-color: linear-gradient(90deg, rgba(213, 231, 35, 1) 0%, rgba(66, 70, 54, 1) 100%); */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    color: var(--color-dark-black);
+    background-color: coral;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__menu {
+    padding-top: 180px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(auto, 25em));
+    grid-template-rows: auto;
+    gap: 0 20px;
+
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__menu a {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 15px 0px;
+    text-decoration: none;
+    background-color: var(--color-orage);
+    font-size: 20px;
+    text-align: center;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__menu a:first-child {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__menu a:first-child img {
+    height: 15px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--images {
+    background-image: url('../images/restaurant/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 50px;
+    justify-content: center;
+
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--images span:first-child {
+    margin-left: 50px;
+    background-color: var(--color-orage);
+    margin: 15px 0;
+    padding: 15px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--images span:last-child {
+    background-color: var(--color-orage);
+    padding: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices .banner-prices {
+    background-color: var(--color-orage);
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices .banner-prices h1 {
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices .banner-prices p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices .banner-prices--one {
+    margin-bottom: 20px
+}
+
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "featured-1"
+        "featured-1";
+    gap: 20px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items .featureds-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 5px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items .featureds-list-item h1 {
+    color: var(--color-grey);
+    margin: 10px 0;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items .featureds-list-item p {
+    color: var(--color-grey);
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items .featureds-list-item span {
+    color: var(--color-grey);
+    margin: 10px 0;
+    font-size: 55px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--detail-item {
+    display: flex;
+    background-color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+    color: var(--color-dark-black);
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--detail-item .featureds-detail-item-description h1 {
+    margin-bottom: 20px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--detail-item .featureds-detail-item-description p {
+    color: var(--color-dark-black);
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--detail-item .featureds-detail-item-description a {
+    background-color: var(--color-orage);
+    padding: 15px;
+    text-decoration: none;
+    color: var(--color-dark-black);
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__instagram-img h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.page-restaurant-wapper__instagram-img--content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.page-restaurant-wapper .page-restaurant-wapper__instagram-img--content figure img {
+    width: 260px;
+    height: 260px;
+}
+
+@media (max-width: 768px) {
+    .page-restaurant-wapper .page-restaurant-wapper__banner {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 0;
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "price-1 price-2";
+        column-gap: 20px;
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices .banner-prices--one {
+        grid-area: 'price-1';
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices .banner-prices--two {
+        grid-area: 'price-2';
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--detail-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--detail-item .featureds-detail-item-description {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-restaurant-wapper .page-restaurant-wapper__menu a {
+        display: none;
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__menu a:first-child {
+        display: flex;
+    }
+
+    .page-restaurant-wapper .page-restaurant-wapper__banner .page-restaurant-wapper__banner--prices {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "price-1"
+            "price-2";
+        column-gap: 20px;
+    }
+
+
+    .page-restaurant-wapper .page-restaurant-wapper__featureds .page-restaurant-wapper__featureds--list-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+}

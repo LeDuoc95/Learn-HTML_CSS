@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -11,8 +12,15 @@
 :root {
     --color-white: #f3f3f3;
     --color-darkblue: #1b1b32;
+    --color-dark-black: #333333;
     --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-    --color-green: #37af65;
+    --color-green: #66cd66;
+    --color-light-blue: #2690d4;
+    --color-orage: #ffc600;
+    --color-white: #ffffff;
+    --color-black: ##000000;
+    --color-grey: #767676;
+    --color-red-light: #d53035;
 }
 
 /* @media (min-width: 576px) { ... }
@@ -42,13 +50,15 @@ body {
 .container .global-header {
     width: 100%;
     height: 120px;
-    background: #5d5a67;
-    opacity: 0.6;
-    color: white;
+    /* background: #5d5a67; */
+    background-image: linear-gradient(to right, #4d4f37, #5c4427, #6c332b, #702345, #542769);
+    /* opacity: 0.8; */
+    color: var(--color-white);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 10000000;
+    box-shadow: -3px 5px 15px 5px #BCB8FF;
 }
 
 .container .global-header .global-nav {
@@ -101,7 +111,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: var(--color-white);
     padding: 10px;
 }
 
