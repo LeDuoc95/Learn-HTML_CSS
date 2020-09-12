@@ -36,6 +36,7 @@
     padding: 4px 20px;
     border-radius: 5px;
     margin: 2px 0;
+    cursor: pointer;
 }
 
 .page-todo-wapper .project-todo .project-todo__content ul.page-todo__content--list li img {
