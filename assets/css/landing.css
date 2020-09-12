@@ -55,7 +55,7 @@
 /* --- introduce -- */
 .page-landing-wapper .page-landing-introduce {
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: minmax(auto, 50%) minmax(auto, 50%);
     grid-template-rows: 40% 60%;
     justify-items: center;
     align-items: center;
