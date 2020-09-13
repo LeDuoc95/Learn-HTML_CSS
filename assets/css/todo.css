@@ -1,7 +1,7 @@
 .page-todo-wapper {
     padding-top: 120px;
     display: grid;
-    grid-template-columns: minmax(auto, 50em) minmax(auto, 50em);
+    grid-template-columns: minmax(50vw, 60em) minmax(50vw, 60em);
     grid-template-rows: auto auto;
     /* grid-template-areas:
         "todo""calculator"
@@ -91,7 +91,6 @@
     box-shadow: 0px 0px 5px 5px rgba(204, 170, 204, 0.8);
 }
 
-
 .page-todo-wapper .project-todo .project-todo__content .project-todo__content--controll {
     display: flex;
     margin-top: 20px;
@@ -105,9 +104,64 @@
     opacity: 1 !important;
 }
 
-/* === ==== */
-.page-todo-wapper .project-calculator {
+/* === chose color project === */
+.page-todo-wapper .project-find-color {
     grid-area: 'calculator';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+}
+
+.page-todo-wapper .project-find-color h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.page-todo-wapper .project-find-color .project-find-color__code-color {
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.page-todo-wapper .project-find-color ul.page-find-color__content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.page-todo-wapper .project-find-color ul.page-find-color__content li{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.page-todo-wapper .project-find-color .project-find-color__messages {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.page-todo-wapper .project-find-color a {
+    background-color: rgb(191, 133, 216);
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page-todo-wapper .project-find-color a:active, a:hover {
+    box-shadow: 0px 0px 15px 10px rgba(145, 214, 88, 0.49);
+}
+
+.page-todo-wapper .project-find-color a:active {
+    background-color: darkorange;
+    color: var(--color-white);
 }
 
 .page-todo-wapper .project-calculator2 {

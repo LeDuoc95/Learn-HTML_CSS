@@ -9,6 +9,10 @@
     src: url(../fonts/NotoSans-Regular.ttf);
 }
 
+ul li{
+    list-style: none;
+}
+
 :root {
     --color-white: #f3f3f3;
     --color-darkblue: #1b1b32;

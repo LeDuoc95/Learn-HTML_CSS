@@ -118,7 +118,7 @@ const handleListTask = (type) => {
 	}
 };
 
-window.addEventListener('load', createDataInLocalStorages);
+window.addEventListener('load',createDataInLocalStorages);
 addTodo.addEventListener('click', addTaskToList);
 clearItemDone.addEventListener('click', () => handleListTask('clear-item-done'));
 clearAllItem.addEventListener('click', () => handleListTask('clear-all-item'));
