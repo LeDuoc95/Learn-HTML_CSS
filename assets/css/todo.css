@@ -164,11 +164,43 @@
     color: var(--color-white);
 }
 
-.page-todo-wapper .project-calculator2 {
-    grid-area: 'calculator2';
+.page-todo-wapper .project-calculator {
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: minmax(50%,100%); */
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(2,auto);
 }
 
+.project-calculator__kerbroad-calculator {
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: repeat(4,75px);
+}
 
-.page-todo-wapper .project-calculator3 {
+/* .project-calculator__kerbroad-calculator .key_add {}
+.project-calculator__kerbroad-calculator .key_min {}
+.project-calculator__kerbroad-calculator .key_multi {}
+.project-calculator__kerbroad-calculator .key_div {} */
+.project-calculator__kerbroad-calculator .key_result {
+    grid-column: 4/5;
+    grid-row: 2/6;
+}
+/* .project-calculator__kerbroad-calculator .key_7 {}
+.project-calculator__kerbroad-calculator .key_8 {}
+.project-calculator__kerbroad-calculator .key_9 {}
+.project-calculator__kerbroad-calculator .key_4 {}
+.project-calculator__kerbroad-calculator .key_5 {}
+.project-calculator__kerbroad-calculator .key_6 {}
+
+.project-calculator__kerbroad-calculator .key_1 {}
+.project-calculator__kerbroad-calculator .key_2 {}
+.project-calculator__kerbroad-calculator .key_3 {}
+.project-calculator__kerbroad-calculator .key_0 {}
+.project-calculator__kerbroad-calculator .key_dot {}
+.project-calculator__kerbroad-calculator .key_ac {} */
+
+
+/* .page-todo-wapper .project-calculator3 {
     grid-area: 'calculator3';
-}
+} */
