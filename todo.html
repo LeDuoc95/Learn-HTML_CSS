@@ -103,34 +103,54 @@
                 <a id="reset-game">Reset Game</a>
             </div>
             <div class="project-calculator">
-                <input type="text" name="" id="project-calculator__display-calculator" value="0">
+                <input type="text" name="" id="project-calculator__display-calculator" disabled value="0">
                 <div class="project-calculator__kerbroad-calculator">
-                    <button class="key_add">+</button>
-                    <button class="key_min">-</button>
-                    <button class="key_multi">x</button>
-                    <button class="key_div">/</button>
-                    <button class="key_result">=</button>
-                    <button class="key_7">7</button>
-                    <button class="key_8">8</button>
-                    <button class="key_9">9</button>
-                    <button class="key_4">4</button>
-                    <button class="key_5">5</button>
-                    <button class="key_6">6</button>
-                    <button class="key_1">1</button>
-                    <button class="key_2">2</button>
-                    <button class="key_3">3</button>
-                    <button class="key_0">0</button>
-                    <button class="key_dot">.</button>
+                    <button class="key-operator key_add"> + </button>
+                    <button class="key-operator key_min"> - </button>
+                    <button class="key-operator key_multi"> x </button>
+                    <button class="key-operator key_div"> / </button>
+                    <button id="key_result" class="key_result">=</button>
+                    <button class="key-number key_7">7</button>
+                    <button class="key-number key_8">8</button>
+                    <button class="key-number key_9">9</button>
+                    <button class="key-number key_4">4</button>
+                    <button class="key-number key_5">5</button>
+                    <button class="key-number key_6">6</button>
+                    <button class="key-number key_1">1</button>
+                    <button class="key-number key_2">2</button>
+                    <button class="key-number key_3">3</button>
+                    <button class="key-number key_0">0</button>
+                    <button id="key_dot" class="key_dot">.</button>
                     <button class="key_ac">AC</button>
                 </div>
             </div>
-            <div class="project-calculator3">calculator</div>
+            <div class="project-rock-paper">
+                <h1>Rock Paper Scissors</h1>
+                <div class="project-rock-paper__game">
+                    <div class="project-rock-paper__game--score">
+                        <span>User</span>
+                        <div id="game-score">0 : 0</div>
+                        <span>comp</span>
+                    </div>
+                    <div id="game-masseges" class="project-rock-paper__game--masseges">
+                        Rock user loses to paper comp. You lose!
+                    </div>
+                    <div class="project-rock-paper__game--your-choise">
+                        <img id="hand-paper" src="./assets/images/js-basic/icons8-hand-80.png" alt="">
+                        <img id="hand-scissors" src="./assets/images/js-basic/icons8-hand-peace-96.png" alt="">
+                        <img id="hand-rock" src="./assets/images/js-basic/icons8-hand-rock-80.png" alt="">
+                    </div>
+                    <h3>Make your move!</h3>
+                </div>
+            </div>
         </main>
     </div>
 
     <!-- JS -->
     <script src="./assets/js/todo.js"></script>
     <script src="./assets/js/findColor.js"></script>
+    <script src="./assets/js/calculator.js"></script>
+    <script src="./assets/js/rockPaper.js"></script>
 </body>
 
 </html>

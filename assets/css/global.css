@@ -9,7 +9,7 @@
     src: url(../fonts/NotoSans-Regular.ttf);
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
@@ -25,6 +25,7 @@ ul li{
     --color-black: ##000000;
     --color-grey: #767676;
     --color-red-light: #d53035;
+    --color-red-fresh: #e5574f;
 }
 
 /* @media (min-width: 576px) { ... }
