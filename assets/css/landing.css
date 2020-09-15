@@ -238,7 +238,7 @@
     justify-content: space-evenly;
     height: 100px;
     background-color: var(--color-black);
-    color: var(--color-white);
+    /* color: var(--color-white); */
     align-items: center;
     font-size: 18px;
 }
