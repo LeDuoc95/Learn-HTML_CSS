@@ -15,7 +15,7 @@
     grid-area: "todo";
     background-color: var(--color-green);
     max-height: 50vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 20px;
     border-radius: 10px;
 }
