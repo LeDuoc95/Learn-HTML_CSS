@@ -11,8 +11,8 @@ const addListenerRockHand = () => {
   handRock.addEventListener("click", () => playGame(3));
 };
 
-const playGame = async (handOfChoise) => {
-  let winerIsUser = true;
+const playGame = async (userOfChoise) => {
+  let winner = "balance";
   // loader.style.display = "flex";
   let handOfComputer = await new Promise((resolve, reject) =>
     setTimeout(() => {
@@ -20,7 +20,7 @@ const playGame = async (handOfChoise) => {
     }, 3000)
   );
   // loader.style.display = "none";
-  console.log("handOfChoise", handOfComputer);
+  console.log("userOfChoise", handOfComputer);
 
   // if (handOfComputer === 1) {
   //   handOfComputer = "paper";
@@ -33,6 +33,9 @@ const playGame = async (handOfChoise) => {
   // if (handOfComputer === 3) {
   //   handOfComputer = "rock";
   // }
+
+  if (userOfChoise - handOfComputer === 0) {
+  }
 };
 
 window.addEventListener("load", addListenerRockHand);

@@ -19,13 +19,13 @@ var addListenerRockHand = function addListenerRockHand() {
   });
 };
 
-var playGame = function playGame(handOfChoise) {
-  var winerIsUser, handOfComputer;
+var playGame = function playGame(userOfChoise) {
+  var winner, handOfComputer;
   return regeneratorRuntime.async(function playGame$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          winerIsUser = true; // loader.style.display = "flex";
+          winner = "balance"; // loader.style.display = "flex";
 
           _context.next = 3;
           return regeneratorRuntime.awrap(new Promise(function (resolve, reject) {
@@ -37,7 +37,7 @@ var playGame = function playGame(handOfChoise) {
         case 3:
           handOfComputer = _context.sent;
           // loader.style.display = "none";
-          console.log("handOfChoise", handOfComputer); // if (handOfComputer === 1) {
+          console.log("userOfChoise", handOfComputer); // if (handOfComputer === 1) {
           //   handOfComputer = "paper";
           // }
           // if (handOfComputer === 2) {
@@ -47,7 +47,9 @@ var playGame = function playGame(handOfChoise) {
           //   handOfComputer = "rock";
           // }
 
-        case 5:
+          if (userOfChoise - handOfComputer === 0) {}
+
+        case 6:
         case "end":
           return _context.stop();
       }
