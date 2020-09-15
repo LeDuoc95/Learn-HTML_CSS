@@ -18,8 +18,7 @@
     overflow-y: scroll;
     padding: 20px;
     border-radius: 10px;
-
-
+    visibility: hidden;
 }
 
 .page-todo-wapper .project-todo .project-todo__content {
@@ -121,8 +120,7 @@
     background-color: var(--color-white);
     padding: 20px;
     border-radius: 10px;
-
-
+    visibility: hidden;
 }
 
 .page-todo-wapper .project-find-color h1 {
@@ -188,7 +186,7 @@ a:hover {
     align-items: center;
     padding: 35px 0;
     border-radius: 10px;
-
+    visibility: hidden;
 }
 
 .page-todo-wapper .project-calculator .project-calculator__kerbroad-calculator {
@@ -223,6 +221,7 @@ a:hover {
 
 /* === Rock Paper === */
 .page-todo-wapper .project-rock-paper {
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: var(--color-white);
@@ -231,6 +230,53 @@ a:hover {
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+}
+
+.project-rock-paper .loader-wapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    background-color: rgb(94 79 101 / 0.5);
+    margin-top: -114px;
+    display: none;
+}
+
+.loader-text {
+    color: var(--color-white);
+    z-index: 10002;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 150px;
+}
+
+.page-todo-wapper .project-rock-paper .loader {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    z-index: 1005;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .page-todo-wapper .project-rock-paper h1 {

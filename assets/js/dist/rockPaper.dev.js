@@ -5,37 +5,49 @@ var handScissors = document.getElementById("hand-scissors");
 var handRock = document.getElementById("hand-rock");
 var gameMasseges = document.getElementById("game-masseges");
 var gameScore = document.getElementById("game-score");
+var loader = document.getElementById("loader");
 
 var addListenerRockHand = function addListenerRockHand() {
   handPaper.addEventListener("click", function () {
-    return playGame("paper");
+    return playGame(1);
   });
   handScissors.addEventListener("click", function () {
-    return playGame("scissor");
+    return playGame(2);
   });
   handRock.addEventListener("click", function () {
-    return playGame("rock");
+    return playGame(3);
   });
 };
 
-var test = function test() {
-  console.log("asyn");
-};
-
-var playGame = function playGame(handOfchoise) {
+var playGame = function playGame(handOfChoise) {
+  var winerIsUser, handOfComputer;
   return regeneratorRuntime.async(function playGame$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          _context.next = 2;
+          winerIsUser = true; // loader.style.display = "flex";
+
+          _context.next = 3;
           return regeneratorRuntime.awrap(new Promise(function (resolve, reject) {
-            return setTimeout(resolve, 3000);
+            return setTimeout(function () {
+              resolve(Math.floor(Math.random() * 3) + 1);
+            }, 3000);
           }));
 
-        case 2:
-          console.log("handOfchoise", handOfchoise);
-
         case 3:
+          handOfComputer = _context.sent;
+          // loader.style.display = "none";
+          console.log("handOfChoise", handOfComputer); // if (handOfComputer === 1) {
+          //   handOfComputer = "paper";
+          // }
+          // if (handOfComputer === 2) {
+          //   handOfComputer = "scissor";
+          // }
+          // if (handOfComputer === 3) {
+          //   handOfComputer = "rock";
+          // }
+
+        case 5:
         case "end":
           return _context.stop();
       }

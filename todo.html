@@ -126,14 +126,19 @@
             </div>
             <div class="project-rock-paper">
                 <h1>Rock Paper Scissors</h1>
+                <div id="loader" class="loader-wapper">
+                    <div class="loader"></div>
+                    <div class="loader-text">Computer is choising!</div>
+                </div>
                 <div class="project-rock-paper__game">
                     <div class="project-rock-paper__game--score">
                         <span>User</span>
-                        <div id="game-score">0 : 0</div>
+                        <div id="game-score">0 : 0</span></div>
                         <span>comp</span>
                     </div>
                     <div id="game-masseges" class="project-rock-paper__game--masseges">
-                        Rock user loses to paper comp. You lose!
+                        <span id="choiceOfUser">Rock</span> user <span id="result">loses</span> to <span
+                            id="choiceOfComp">paper</span> comp. <span id="loseOrWin">You lose!</span>
                     </div>
                     <div class="project-rock-paper__game--your-choise">
                         <img id="hand-paper" src="./assets/images/js-basic/icons8-hand-80.png" alt="">
