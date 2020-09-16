@@ -1,0 +1,12 @@
+.page-photo-wapper {
+    width: 100%;
+}
+
+.page-photo-wapper .page-photo-wapper__banner {
+    /* background-image: url('../images/photography/banner.jpg'); */
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
