@@ -16,22 +16,21 @@ async function getlistImages(page = 1) {
   loaded[0].style.display = "none";
 
   const response = await fetch(`https://5f616bc707c1770016c52044.mockapi.io/list-url/${page}`).then((response) => response.json());
-  console.log("response", page, response.items);
+  // console.log("response", page, response.items);
 
   let startItemLoad = 0;
-  let endItemLoad = 5;
+  let endItemLoad = 6;
 
   console.log(startItemLoad, endItemLoad);
 
-  if (page >= 1) {
+  if (presentPage > 1) {
     startItemLoad = endItemLoad;
     endItemLoad = endItemLoad + 5;
   }
-
   for (let i = startItemLoad; i < endItemLoad; i++) {
-    console.log(i);
     let children = document.createElement("div");
     let node = document.createTextNode(`${response.items[i].title}`);
+    children.style.backgroundImage = `url(${response.items[i].url})`;
     children.appendChild(node);
     children.classList.add("page-photo-list-images__background-item--item");
 
@@ -45,7 +44,7 @@ async function getlistImages(page = 1) {
   loading[0].style.display = "none";
   loaded[0].style.display = "block";
 
-  if (presentPage >= 1) {
+  if (presentPage === 1) {
     presentPage = presentPage + 1;
   }
 }
@@ -56,6 +55,7 @@ const loadData = () => {
 };
 
 loadMore.addEventListener("click", () => {
+  console.log('presentPage', presentPage)
   getlistImages(presentPage);
 });
 window.addEventListener("load", loadData);
