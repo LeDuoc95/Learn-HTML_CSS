@@ -16,6 +16,12 @@ async function getlistImages(page = 1) {
   loaded[0].style.display = "none";
 
   const response = await fetch(`https://5f616bc707c1770016c52044.mockapi.io/list-url/${page}`).then((response) => response.json());
+  // const response2 = Promise.all([
+  //   fetch(`https://5f616bc707c1770016c52044.mockapi.io/list-url/${page}`).then((response) => response.json()),
+  //   fetch(`https://5f616bc707c1770016c52044.mockapi.io/list-url/${page}`).then((response) => response.json()),
+  //   fetch(`https://5f616bc707c1770016c52044.mockapi.io/list-url/${page}`).then((response) => response.json())
+  // ]).then(console.log);
+  
   // console.log("response", page, response.items);
 
   let startItemLoad = 0;
@@ -27,7 +33,10 @@ async function getlistImages(page = 1) {
     startItemLoad = endItemLoad;
     endItemLoad = endItemLoad + 5;
   }
+  console.log('startItemLoad', startItemLoad,endItemLoad)
+
   for (let i = startItemLoad; i < endItemLoad; i++) {
+    // for (let i = 0; i < 10; i++) {
     let children = document.createElement("div");
     let node = document.createTextNode(`${response.items[i].title}`);
     children.style.backgroundImage = `url(${response.items[i].url})`;
